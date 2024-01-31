@@ -207,7 +207,6 @@ If you have questions or need assistance with the accommodation form please <a h
 <h3>How to Prepare for Lesson Developer Training</h3>
 
 <p>
-Before the training, please <strong>complete our pre-training survey</strong>.
 You will receive a custom link for your event when you receive your connection information.
 </p>
 <p>Before joining the first training session, take a few minutes to think about and note down your answers to the following questions:
@@ -233,7 +232,7 @@ visit our <a href="https://carpentries.github.io/lesson-development-training/mar
 <h3>Attendance and Cancellation</h3>
 Trainees who miss more than 1 hour of the training may be marked absent.
 Lesson Developer certification cannot be completed without full attendance at
-an Instructor Training event. If you unexpectedly need to miss more than
+an Collaborative Lesson Development Training event. If you unexpectedly need to miss more than
 1 hour of your event, please contact your Trainers (contact info below).
 
 For events in which registration occurs through The Carpentries via Eventbrite,
