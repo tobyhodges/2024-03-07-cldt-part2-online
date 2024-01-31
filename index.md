@@ -1,34 +1,37 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.
-curriculum: "Instructor Training" # DON'T CHANGE THIS EITHER. (THANK YOU.)
-venue: "FIXME"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
-country: "FIXME"      # "W3" for centrally organized online trainings or lowercase two-letter ISO country code such as "fr" of the host institution if applicable (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+curriculum: "Collaborative Lesson Development Training" # DON'T CHANGE THIS EITHER. (THANK YOU.)
+part: "2"         # The part of the lesson development training curriculum being taught at this event: "1" or "2"
+venue: "Software Sustainability Institute"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+country: "uk"      # "W3" for centrally organized online trainings or lowercase two-letter ISO country code such as "fr" of the host institution if applicable (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latitude: "45"        # decimal latitude of training venue (use https://www.latlong.net/)
 longitude: "-1"       # decimal longitude of the training venue (use https://www.latlong.net)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of trainers' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-etherpad:             # optional: URL for the workshop Etherpad if there is one
+humandate: "7 & 14 March, 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "09:00-13:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2024-03-07      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2024-03-14        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Aleksandra Nenadic", "Toby Hodges"] # boxed, comma-separated list of trainers' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: []     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["tobyhodges@carpentries.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+etherpad: https://codimd.carpentries.org/2024-03-07-cldt-part2-online            # optional: URL for the workshop CodiMD/Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-<!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
+<!-- See instructions in the comments below for how to edit specific sections of this training event template. When you are done, rename the file to index.md (replacing the default version of that file, used for Instructor Trainig events)-->
 
 <!--
   HEADER
 
-  Edit the values in the block above to be appropriate for your workshop.
+  Edit the values in the block above to be appropriate for your event.
   If the value is not 'true', 'false', 'null', or a number, please use
   double quotation marks around the value, unless specified otherwise.
   And run 'tools/check' *before* committing to make sure that changes are good.
 -->
+
+<img src="fig/CLDT-hex-sticker.svg" alt="" width="20%"/>{: style="float: right"}
 
 <!--
   EVENTBRITE
@@ -59,37 +62,74 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 <p>
 <a href="{{ site.carpentries_site }}">The Carpentries</a> is a community of practice centered around teaching foundational
-  coding and data science skills to researchers worldwide. This Instructor Training
-  event is designed to prepare trainees to certify and participate as Carpentries
-  Instructors. However, much of our curriculum focuses on educational principles that
-  apply across a wide variety of contexts. We also welcome participants who do not plan
-  to certify but simply wish to become a better teacher.
+  coding and data science skills to researchers worldwide.
+  This Lesson Developer Training teaches good practices in lesson design and development, and collaboration skills, using open source infrastructure.
+  The target audience is groups of collaborators with an idea for a new lesson they would like to create together, especially if that lesson is intended for short-format training (e.g. part or all of a two-day workshop).
 </p>
 
-<p>Carpentries Instructor Training has the following goals:</p>
+<h3>What is taught in this training?</h3>
 
-* Introduce you to evidence-based teaching practices.
-* Teach you how to create a positive environment for learners at your workshops.
-* Provide opportunities for you to practice and build your teaching skills.
-* Help you become integrated into the Carpentries community.
-* Prepare you to use these teaching skills in teaching Carpentries workshops.
+<p>After attending Carpentries Lesson Developer Training, participants will be able to:</p>
+
+* collaboratively develop and publish lessons using The Carpentries lesson infrastructure (aka [The Carpentries Workbench](https://carpentries.github.io/workbench/))
+* identify and characterise the target audience for a lesson.
+* define SMART learning objectives.
+* explain the pedagogical value of authentic tasks.
+* create exercises for formative assessment.
+* explain how considerations of cognitive load can influence the pacing, length, and organisation of a lesson.
+* configure and maintain accessible and usable lesson repositories using best practices, readily available for collaboration.
+* identify and correct accessibility issues in a Carpentries lesson.
+* update and improve lesson material guided by feedback and reflection from teaching.
+* review and provide constructive feedback on lessons.
+
+<h3>What is <em>not</em> taught in this training?</h3>
 
 <p> Because we have only limited time, some things are beyond the scope of this training. We will
 not be learning:</p>
 
-* How to program in R or Python, use Git or SQL, or any of the other topics taught in  <a href="{{ site.dc_site }}">Data Carpentry</a>,
-  <a href="{{ site.lc_site }}">Library Carpentry</a>, or
-  <a href="{{ site.swc_site }}">Software Carpentry</a> workshops.
-* How to create your own lessons from scratch. However, this Instructor Training serves as a good precursor to [The Carpentries Lesson Developer Training]({{ site.lessondev_training_site }}).
+* How to track changes and manage branches with Git. To learn these skills, we recommend that you follow the lessons from Library Carpentry and Software Carpentry:
+    * [Library Carpentry: Introduction to Git](https://librarycarpentry.org/lc-git/)
+    * [Version Control with Git](https://swcarpentry.github.io/git-novice/)
+* How to teach a lesson in a workshop. [The Carpentries Instructor Training]({{ site.training_site }}) teaches foundational skills for excellent teaching.
 
+
+<h3>What to expect in this part of the training</h3>
+
+<p> Lesson Developer Training events are hands-on throughout:
+short lessons are interspersed with frequent practical exercises, through which trainees construct the basic outline of their lesson and begin to fill in some of the detail.
+For more information, see <a href="{{ site.lessondev_training_site }}">the Lesson Developer Training Curriculum</a>.
+</p>
 
 <p>
-Instructor Training events are hands-on throughout: short lessons alternate
-with individual and group practical exercises, including practice teaching sessions.
-This Instructor Training event is the first step towards certification as a
-Carpentries Instructor. For more details on the other 3 steps, see the <a href="{{ site.training_site }}/checkout.html">Checkout Instructions</a> page.
-For more information, see our <a href="{{ site.training_site }}">Instructor Training Curriculum</a>.
+The training takes place in two parts separated by an extended break.
 </p>
+
+{% if page.part == "1" %}
+<p>
+This first part focusses on backward lesson design and techniques for the development of effective exercises and accessible lesson content.
+Trainees will define the target audience and intended learning outcomes of their lesson,
+produce an outline of the lesson content and narrative,
+prepare exercises and examples for a chosen section,
+and start building this material into an open source lesson website.
+</p>
+<p>
+Trainees are required to trial part of their new lesson with a real audience during the break between this first part and the conclusion of the training.
+When they return for the second and final part of the training, participants will reflect on this experience and discuss how they will approach the remaining stages of lesson development.
+</p>
+{% elsif page.part == "2" %}
+<p>
+In this second and final part of the training, participants will reflect on the experience of trialling their new lesson content,
+the remaining stages of lesson development,
+and some techniques and tools they can use to collaborate more effectively on their open source lesson project.
+</p>
+{% else %}
+<div class="alert alert-warning">
+You have not specified which part of Lesson Developer Training will be taught at this event.
+The training part is configured in the <code>part</code> field of the YAML header for this page (<code>index.md</code>).
+Expected values for <code>part</code> are <code>"1"</code> and <code>"2"</code>.
+The current value is: <code>{{ page.part }}</code>.
+</div>
+{% endif %}
 
 <h3>Code of Conduct</h3>
 
@@ -110,7 +150,7 @@ site.swc_site }}/conduct/">Code of Conduct</a>.
   LOCATION
 
   This block displays the address and links to maps showing directions
-  if the latitude and longitude of the workshop have been set.  You
+  if the latitude and longitude of the event have been set.  You
   can use http://itouchmap.com/latlong.html to find the lat/long of an
   address.
   -->
@@ -164,46 +204,42 @@ To request an accommodation for this training, please fill out the
 <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
 If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
 
-<h3>How to Prepare for Instructor Training</h3>
+<h3>How to Prepare for Lesson Developer Training</h3>
 
-Before your training, please visit our Preparing for Instructor Training page for complete instructions. A brief summary of these instructions is as follows
+<p>
+Before the training, please <strong>complete our pre-training survey</strong>.
+You will receive a custom link for your event when you receive your connection information.
+</p>
+<p>Before joining the first training session, take a few minutes to think about and note down your answers to the following questions:
 <ol>
-  <li>Complete our Pre-training Survey. You will receive a custom link for your event when you receive your connection information.</li>
-  <li>Select a lesson to use for teaching practice sessions and prepare a 3 minute segment, spending no more than 20-30 minutes to prepare.</li>
-  <li>Please read the following:</li>
-    <ul>
-      <li><a href="https://carpentries.github.io/instructor-training/files/papers/science-of-learning-2015.pdf">The Science of Learning</a></li>
-      <li><a href="https://carpentries.org/files/reports/2021%20Carpentries%20Annual%20Report_Final.pdf">The Carpentries Annual Report</a></li>
-    </ul>
+    <li>What is the topic of the lesson that you plan to develop based on this training?</li>
+    <li>Have you created training material on this topic before?</li>
+    <li>What is motivating you to create this lesson?</li>
 </ol>
-
-<h3> Checkout: The Instructor Certification Process</h3>
-After the training event, we ask you to complete three follow-up tasks to become a certified Instructor. These requirements are detailed on our
-  <a href="{{ site.training_site }}/checkout.html">Checkout Instructions</a> page and will be discussed at our training.
-
-{% if online == "false" %}
-<h3>What to Bring to an In-Person Event</h3>
-
-Participants should bring a laptop that is Internet connected and has a
-functioning browser. If you have it, a device for recording audio and video
-(mobile phones and laptops are OK) is useful as we
-are going to record one another teaching in pairs or threes. It does not have
-to be high-quality, but it should be good enough that you can understand what
-someone is saying.
-{% endif %}
+</p>
+<h4>Prerequisite Knowledge</h4>
+<p>
+Before joining Collaborative Lesson Development Training, participants should be able to:
+<ol>
+  <li>write formatted text - bold and italic, headings, links, bullet point and numbered lists - with Markdown.</li>
+  <li>log into <a href="https://github.com/" target="_blank">GitHub.com</a> and create and edit files using the GitHub web interface.</li>
+</ol>
+</p>
+<p>
+If you need to learn or refresh these skills before the training,
+visit our <a href="https://carpentries.github.io/lesson-development-training/markdown-github-primer.html">Primer on Markdown and GitHub</a> for links to resources to help learn these skills.
+</p>
 
 <h3>Attendance and Cancellation</h3>
 Trainees who miss more than 1 hour of the training may be marked absent.
-Instructor certification cannot be completed without full attendance at
+Lesson Developer certification cannot be completed without full attendance at
 an Instructor Training event. If you unexpectedly need to miss more than
 1 hour of your event, please contact your Trainers (contact info below).
 
 For events in which registration occurs through The Carpentries via Eventbrite,
 cancellation may be performed in Eventbrite up to the start of the event.
-Canceled seats cannot be filled after the 1 week registration deadline for these events,
+Cancelled seats cannot be filled after the 1 week registration deadline for these events,
 so we ask that you only cancel if absolutely necessary.
-
-More information on our <a href="https://docs.carpentries.org/topic_folders/instructor_training/cancellations_and_makeups.html">cancellation and makeup policy</a> is available in The Carpentries Handbook.
 
 <h3 id="contact">Contact</h3>
 <p>
@@ -227,182 +263,42 @@ for more information.
 
 <hr/>
 
-<h2 id="preparation" name="preparation">Preparation</h2>
-
-<p>
-  Please read the following before the training begins:
-</p>
-<ol>
-  <li><a href="{{ site.training_site }}/papers/science-of-learning-2015.pdf">The Science of Learning</a></li>
-  <li><a href="https://carpentries.org/files/reports/2021%20Carpentries%20Annual%20Report_Final.pdf">The Carpentries 2021 Annual Report</a></li>
-</ol>
-<p>
-  Please also read through <em>one</em> episode of one of The Carpentries lessons below
-  carefully, so that you can do some exercises based on it on the
-  first day of the class.  An episode is one page of a lesson.
-</p>
-
-  <ul>
-  <li><a href="{{ site.dc_site }}/lessons">Data Carpentry Lessons</a></li>
-  <li><a href="{{ site.lc_site }}/lessons">Library Carpentry Lessons</a></li>
-  <li><a href="{{ site.swc_site }}/lessons">Software Carpentry Lessons</a></li>
-  </ul>
-
 
 <hr/>
 
 <h2 id="materials" name="materials">Training Materials and Schedule</h2>
 
 <p>
-  Please see <a href="{{ site.training_site }}/instructor/index.html#schedule">the Instructor Training Curriculum</a> for course material and sample schedule for a 2-day event.
+  Please see <a href="{{ site.lessondev_training_site }}/instructor/index.html#schedule">the Lesson Developer Training Curriculum</a> for course material and sample schedule for a 6 half-day event.
+</p>
+<p>
+  The training is divided into two parts and includes an extended break between the two parts.
+  Part 1 ends with a wrap-up session after the section on <em>Preparing to Teach</em>.
+  Part 2 begins with a reflection on the lesson trial runs trainees completed during the break, then switches focus to discuss effective strategies and tools for collaboration.
 </p>
 
 
-<hr/>
-
 <!--
-NOTE: This space can be customized to reflect the unique schedule of your training. If you would like it to display,
-adjust the times and titles, then delete the characters above and below that serve to comment it out.
+  CODIMD FOR LESSON DEVELOPER TRAINING
+  A template CodiMD for notetaking at Collaborative Lesson Development Training
+  is available at https://codimd.carpentries.org/cldt-notes-template.
+  To create a CodiMD for your training, navigate to
+      http://codimd.carpentries.org/YYYY-MM-DD-cldt-site
+  where 'YYYY-MM-DD-cldt-site' is the identifier for your training,
+  e.g., '2015-06-10-cldt-esu'.
+  Then copy the contents of the template CodiMD and paste it into your new document.
+  If you find that the template is outdated or needs fixing, please open an issue
+  on the training curriculum repository: https://github.com/carpentries/lesson-development-training/issues/new
 -->
 
-<!--
-TWO DAY SCHEDULE
---->
-<!--
-<div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Welcome </td> </tr>
-      <tr> <td>09:30</td> <td>Building Skill with Practice </td> </tr>
-      <tr> <td>10:30</td> <td>Morning Break </td> </tr>
-      <tr> <td>10:45</td> <td>Expertise and Instruction </td> </tr>
-      <tr> <td>11:30</td> <td>Memory and Cognitive Load </td> </tr>
-      <tr> <td>12:15</td> <td>Building Skill with Feedback </td> </tr>
-      <tr> <td>12:35</td> <td>Lunch </td> </tr>
-      <tr> <td>13:35</td> <td>Motivation and Demotivation </td> </tr>
-      <tr> <td>14:35</td> <td>Equity, Inclusion, and Accessibility </td> </tr>
-      <tr> <td>15:15</td> <td>Afternoon Break </td> </tr>
-      <tr> <td>15:30</td> <td>Teaching Is a Skill </td> </tr>
-      <tr> <td>16:30</td> <td>Wrap-up and Homework </td> </tr>
-      <tr> <td>16:50</td> <td>Finish </td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Welcome Back </td> </tr>
-      <tr> <td>09:10</td> <td>Getting Started on Instructor Certification </td> </tr>
-      <tr> <td>09:40</td> <td>The Carpentries: How We Operate </td> </tr>
-      <tr> <td>10:25</td> <td>Morning Break </td> </tr>
-      <tr> <td>10:40</td> <td>Live Coding Is a Skill </td> </tr>
-      <tr> <td>11:45</td> <td>Preparing to Teach </td> </tr>
-      <tr> <td>12:30</td> <td>Lunch </td> </tr>
-      <tr> <td>13:30</td> <td>More Practice Live Coding </td> </tr>
-      <tr> <td>14:15</td> <td>Working with Your Team</td> </tr>
-      <tr> <td>15:25</td> <td>Afternoon Break </td> </tr>
-      <tr> <td>15:40</td> <td>Launches and Landings </td> </tr>
-      <tr> <td>16:20</td> <td>Putting it Together </td> </tr>
-      <tr> <td>16:40</td> <td>Wraping Up </td> </tr>
-      <tr> <td>16:50</td> <td>Post-Training Survey </td> </tr>
-      <tr> <td>17:05</td> <td>Finish </td> </tr>
-    </table>
-  </div>
-</div>
-
--->
-
-
-<!--
-FOUR DAY SCHEDULE
---->
-<!--
-<div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Welcome </td> </tr>
-      <tr> <td>09:30</td> <td>Building Skill with Practice </td> </tr>
-      <tr> <td>10:30</td> <td>Break </td> </tr>
-      <tr> <td>10:45</td> <td>Expertise and Instruction </td> </tr>
-      <tr> <td>11:30</td> <td>Memory and Cognitive Load </td> </tr>
-      <tr> <td>12:15</td> <td>Building Skill with Feedback </td> </tr>
-      <tr> <td>12:35</td> <td>Finish day 1 </td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>13:35</td> <td>Motivation and Demotivation </td> </tr>
-      <tr> <td>14:35</td> <td>Equity, Inclusion, and Accessibility </td> </tr>
-      <tr> <td>15:15</td> <td>Break </td> </tr>
-      <tr> <td>15:30</td> <td>Teaching Is a Skill </td> </tr>
-      <tr> <td>16:30</td> <td>Wrap-up and Homework </td> </tr>
-      <tr> <td>16:50</td> <td>Finish day 2</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 3</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Welcome Back </td> </tr>
-      <tr> <td>09:10</td> <td>Getting Started on Instructor Certification </td> </tr>
-      <tr> <td>09:40</td> <td>The Carpentries: How We Operate </td> </tr>
-      <tr> <td>10:25</td> <td>Break </td> </tr>
-      <tr> <td>10:40</td> <td>Live Coding Is a Skill </td> </tr>
-      <tr> <td>11:45</td> <td>Preparing to Teach </td> </tr>
-      <tr> <td>12:30</td> <td>Finish day 3 </td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 4</h3>
-    <table class="table table-striped">
-      <tr> <td>13:30</td> <td>More Practice Live Coding </td> </tr>
-      <tr> <td>14:15</td> <td>Working with Your Team</td> </tr>
-      <tr> <td>15:25</td> <td>Break </td> </tr>
-      <tr> <td>15:40</td> <td>Launches and Landings </td> </tr>
-      <tr> <td>16:20</td> <td>Putting it Together </td> </tr>
-      <tr> <td>16:40</td> <td>Wraping Up </td> </tr>
-      <tr> <td>16:50</td> <td>Post-Training Survey </td> </tr>
-      <tr> <td>17:05</td> <td>Finish </td> </tr>
-    </table>
-  </div>
-</div>
-
--->
-
-
-<!--
-  ETHERPAD
-
-  At `_misc/etherpad.txt` you will find a template for the etherpad.
-
-  Display the Etherpad for the workshop.  You can set this up in
-  advance or on the first day; either way, make sure you push changes
-  to GitHub after you have its URL.  To create an Etherpad, go to
-
-      http://pad.software-carpentry.org/YYYY-MM-DD-site
-
-  where 'YYYY-MM-DD-site' is the identifier for your workshop,
-  e.g., '2015-06-10-esu'.
--->
 {% if page.etherpad %}
 <hr/>
 
-<p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+<p id="codimd">
+  <strong>CodiMD:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  We will use this CodiMD document for chatting, taking notes, and sharing URLs and bits of code during the training.
 </p>
 
 {% endif %}
 
-<h2 id="pre_workshop_survey">Surveys</h2>
-
-<p>
-  Before attending the training, please fill out <a href="{{ site.instructor_pre_survey }}{{ site.github.project_title }}">our pre-training survey</a>.
-</p>
-
-
-<p>
-  After the training, please fill out <a href="{{ site.instructor_post_survey }}{{ site.github.project_title }}">our post-training survey</a>.
-</p>
